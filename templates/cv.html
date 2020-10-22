@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block tit %}Linktree{% endblock%}
+
+{% block contenido %}
+<div class="container ">
+    <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-offset="10">
+        <div class="h4 mt-0 title text-center">Acerca de mi</div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-7"><strong class="text-uppercase">Descripcion</strong></div>
+                        <p class="col-sm-8">{{pers['Acerca de mi']}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-7"><strong class="text-uppercase">Pais de Nacimiento</strong></div>
+                        <p class="col-sm-8">{{pers['Pais de Nacimiento']}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-7"><strong class="text-uppercase">Edad</strong></div>
+                        <p class="col-sm-8">{{pers['Edad']}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-7"><strong class="text-uppercase">Idiomas</strong></div>
+                        {% for x in idi %}
+                        <li class="col-sm-8">{{x}}</li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-7"><strong class="text-uppercase">Intereses</strong></div>
+                        {% for y in inter%}
+                        <li class="col-sm-8">{{y}}</li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="skill">
+    <div class="container">
+        <div class="h4 text-center mb-4 title">Tecnologias</div>
+        <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md text-center">
+                        <ul class="list-group">
+                            {% for w in tecs %}
+                            <li class="list-group-item">{{w}} </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

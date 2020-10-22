@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block tit %}Linktree{% endblock%}
+
+{% block contenido %}
+
+{% for x in links %}
+    <a href="{{links[x]}}" class="btn btn-danger btn-lg active btn-block" role="button" aria-pressed="true">{{x}}</a>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block tit %}Contacto{% endblock%}
+
+{% block contenido %}
+
+<div class="section block" id="contact">
+    <div class="cc-contact-information">
+        <div class="container">
+            <div class="cc-contact">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card mb-0 aos-init aos-animate" data-aos="zoom-in">
+                            <div class="h4 text-center title">Contacto</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <form action="https://formspree.io/lorenaperez@ufm.edu" method="POST">
+                                            <div class="p pb-3"><strong>Para cualquier consulta:</strong></div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group"><span class="input-group-addon"><i
+                                                                class="fa fa-user-circle"></i></span><input
+                                                            class="form-control" type="text" name="name"
+                                                            placeholder="Nombre" required="required"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group"><span class="input-group-addon"><i
+                                                                class="fa fa-file-text"></i></span><input
+                                                            class="form-control" type="text" name="Subject"
+                                                            placeholder="Asunto" required="required"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="input-group"><span class="input-group-addon"><i
+                                                                class="fa fa-envelope"></i></span><input
+                                                            class="form-control" type="email" name="_replyto"
+                                                            placeholder="Correo electronico" required="required"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <div class="form-group"><textarea class="form-control"
+                                                            name="message" placeholder="Tu mensaje"
+                                                            required="required"></textarea></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><button class="btn btn-danger"
+                                                        type="submit">Enviar</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <p class="mb-0"><strong>Telefono</strong></p>
+                                        <p class="pb-2">+555 555 555</p>
+                                        <p class="mb-0"><strong>Correo electronico</strong></p>
+                                        <p>{{co['correo']}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

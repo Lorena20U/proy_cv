@@ -1,0 +1,44 @@
+--- # MiniProyecto CV
+fotografia: avatar.png
+informacion_pagina:
+    autor: Lorena Perez
+    titulo: Mi CV
+informacion_personal:
+    Nombre Completo: Lorena Yaneth Perez Perez
+    Pais de Nacimiento: Guatemala
+    Idiomas:
+        - Español
+    Edad: 19
+    Acerca de mi: Soy estudiante de Ingenieria en Computer Science. Decidi estudiar ingenieria porque me encanta la tecnologia y la satisfaccion de poder crear un objeto desde cero con la programacion y otros elementos.
+    Carrera: Computer Science
+    Intereses:
+        - Interes 1
+        - Interes 2
+        - Interes 3
+        - Interes 4
+        - Interes 5
+informacion_profesional:
+    tecnologias: 
+        - Python
+        - Java
+        - C++
+    educacion: Universidad Francisco Marroquin
+informacion_referencias:
+    referencias_laborales: 
+        - Referencia 1
+        - Referencia 2
+        - Referencia 3
+        - Referencia 4
+    referencia_personal: 
+        - Referencia 1
+        - Referencia 2
+        - Referencia 3
+        - Referencia 4
+informacion_redes:
+    Facebook: https://www.facebook.com/profile.php?id=100050480993139&viewas=100000686899395
+    Instragram: https://www.instagram.com/yaneth33613/?hl=es-la
+    Curriculum Vitae: /cv
+    Contacto: /Contacto
+informacion_contacto:
+    correo: lorenaperez@ufm.edu
+    
