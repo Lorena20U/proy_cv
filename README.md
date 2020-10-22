@@ -2,7 +2,7 @@
 [Docker hub]()
 
 # Run
-`docker run -it -p 5000:500 lorena612/proy-cv`
+`docker run -it -p 5000:5000 lorena612/proy_cv`
 
 # Develop
 
