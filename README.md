@@ -1,5 +1,5 @@
 # Links-cv
-[Docker hub](https://hub.docker.com/repository/registry-1.docker.io/lorena612/proy_cv/tags?page=1)
+[Docker hub](https://hub.docker.com/repository/docker/lorena612/proy_cv/general)
 
 # Run
 `docker run -it -p 5000:5000 lorena612/proy_cv`
